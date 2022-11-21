@@ -1,0 +1,170 @@
+body{
+    background:linear-gradient(to bottom left, #f9858b,#ed335f,#761113 );
+}
+
+h1{
+    font-family: cursive;
+    font-size: 50px;
+}
+
+.container {
+    width:996px;
+    margin:0px auto;
+    font-size:1em;
+}
+section,aside {
+    padding: 10px;
+    background:#ccccff;
+    -moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;border-radius:5px;
+    border: solid black 2px;
+}
+section {
+    float: left;
+    width: 100%;
+}
+aside {
+    float: right;
+    width: 25%;
+}
+nav {
+    overflow: hidden;
+}
+nav ul {
+    list-style-type:none;
+    float:left;
+    padding:0px;
+}
+nav ul li {
+    float:left;
+    padding:3px 10px;
+    margin:2px;
+    background:#ccccff;
+    -moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;border-radius:5px;
+    border: 2px solid black;
+}
+footer {
+    margin:10px;
+    text-align:center;
+    clear:both;
+}
+
+/* para 980px o menos */
+@media screen and (max-width:980px) {
+    .container {
+        width:98%;
+
+        
+    }
+    section {
+        width:68%;
+    }
+    
+    
+}
+
+/* para 700px o menos */
+@media screen and (max-width:700px) {
+    aside,section {
+        float:none;
+        width:96%;
+    }
+    nav, section {
+        font-size:1.2em;
+    }
+    aside {
+        margin-top:5px;
+    }
+    nav ul {
+        float:none;
+        clear:both;
+    }
+}
+
+/* para 480px o menos */
+@media screen and (max-width:480px) {
+    aside {
+        display:none;
+    }
+    nav, section {
+        font-size:1.5em;
+    }
+    section {
+        width:94%;
+    }
+    nav ul {
+        float:left;
+        clear:none;
+        width:50%;
+    }
+    nav ul li {
+        float:none;
+    }
+}
+
+.navv{
+    
+    color: #ffff;
+    padding: 1.5em 5%;
+
+    display: grid;
+    gap: 1.5em;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.navv_title{
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 7px;
+    background:linear-gradient(to bottom left,#761113,#ed335f,#f9858b );
+
+}
+
+.navv_list{
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    gap: 1 em;
+}
+
+.navv_link{
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.linksito{
+    color: aqua;
+    font-size: 60px;
+}
+
+@media (min-width:693px){
+
+    .navv_title, .navv_list{
+        margin: unset;
+    }
+
+
+}
+
+::-webkit-scrollbar{
+    background: #ccccff;
+    
+    
+}
+
+::-webkit-scrollbar-thumb{
+   background:linear-gradient(to bottom right, #f9858b,#ed335f,#761113);
+
+    border: 0.5px solid black;
+    border-radius: 7px;
+}
